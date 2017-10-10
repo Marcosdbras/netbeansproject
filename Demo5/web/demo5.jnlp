@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?> 
+     <!-- JNLP File for Manager Application --> 
+<jnlp spec="1.0+" codebase = "$$codebase"> 
+
+	<application-desc main-class="demo5.client.ClientApplication"/>
+
+    <information> 
+      <title>Demo5</title> 
+      <vendor>Marcos Brás</vendor>
+	  <description>MDI Frame web app</description>
+    </information> 
+
+  <security> 
+      <all-permissions/> 
+  </security> 
+    
+    <resources>
+<j2se version="1.4+"/> 
+<jar href="demo5client.jar" />
+<jar href="commonos.jar" />
+<jar href="clientos.jar" />
+<jar href="jcalendar.jar" />
+<jar href="jnlp.jar" />    
+<jar href="hessian-4.jar" />   
+
+<property name="jnlp.SERVERURL" value="$$context/controller"/>    
+   
+   </resources>
+
+</jnlp>
+
