@@ -2,6 +2,38 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
+
+Convenção CamelCase
+
+Nomes de pacotes: tudo em minúsculo
+    meupacote
+
+Nomes de classes ou interface: Letra em Maiúsculo e o resto CamelCase
+    MinhaClasse
+
+Nomes dos métodos, atributos, variáveis, parâmetro: Primeira palavra minúsculo e o resto camel case
+    meuMetodo
+
+Nomes de constantes: Tudo em maúsculo, pode utilizar underscore
+    VALOR_DE_PI=3,14
+
+1) criar nova aplicação java e desmarcar criar classe principal
+2) cria PrimeircaClasse / Forms GUI Swing / Form JFrame
+3) Janela / redefinir janela
+4) renomear componente: clique com botão secundário e depois alterar nome
+5) programar evento: clique com botão secudário / eventos / action / actionPerformend
+    setText("Olá, mundo!")
+
+conceito
+extends: herança
+private: encapsulamento
+implements: interfaces
+
+
+O executavel está sendo gerado em:
+clique em limpar e construir projeto 
+C:\Users\marcosbras\Documents\NetBeansProjects\OlaMundoSwing\dist
+
  */
 package curso.basico.java;
 
