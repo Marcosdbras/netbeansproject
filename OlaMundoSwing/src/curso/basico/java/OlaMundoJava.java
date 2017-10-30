@@ -34,12 +34,21 @@ O executavel está sendo gerado em:
 clique em limpar e construir projeto 
 C:\Users\marcosbras\Documents\NetBeansProjects\OlaMundoSwing\dist
 
+Tipos primitivos de variáveis
+
+
  */
 package curso.basico.java;
 
 /**
  *
  * @author marcosbras
+ * @version 1.0.0
+ * @since 2017-10-30
+ * 
+ * sempre que o cometánrio iniciar com ** na primeira linha
+ * está indicando para o java que este comentário é para documentação
+ * 
  */
 public class OlaMundoJava extends javax.swing.JFrame {
 
