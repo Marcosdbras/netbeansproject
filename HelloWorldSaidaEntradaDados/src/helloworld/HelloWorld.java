@@ -9,6 +9,8 @@ http://www.devmedia.com.br/wrappers-em-java-aprenda-como-utilizar/30275
 //sout + <<tab>> para completar
 package helloworld;
 
+import java.util.Scanner;
+
 /**
  *
  * @author marcosbras
@@ -45,6 +47,21 @@ public class HelloWorld {
         
         float nota2 = (float) 7.5;
         
+        //Tipos de dados incompatíveis para compatível
+        int i = 30;
+        String v = Integer.toString(i);
+        
+        String valor = "30";
+        i = Integer.parseInt(valor);
+        
+        String v1 = "30.5";
+        float i1 = Float.parseFloat(v1);
+        
+        
+        
+        
+        
+        //Saída de dados
         System.out.println("Nota 1 é "+nota1);
         
         
@@ -58,6 +75,18 @@ public class HelloWorld {
          System.out.printf("A nota 1 de %s é %.2f \n",nome,nota1);
          
          System.out.format("A nota 2 de %s é %.2f \n",nome,nota2);
+         
+         
+         //Entrada de Dados (System.in) = dispositivo que será monitorado
+         Scanner teclado = new Scanner(System.in);
+         
+         System.out.print("Digite o nome do primeiro aluno: ");
+         String sn1 = teclado.nextLine();
+         
+         System.out.print("Digite a nota do primeiro aluno: ");
+         float fn1 = teclado.nextFloat();
+         
+         System.out.printf("O Aluno 1 é %s e sua nota é %.2f \n",sn1,fn1);
     }
     
 }
