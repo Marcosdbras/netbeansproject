@@ -165,6 +165,10 @@ public class HelloWorld {
         float fn1 = teclado.nextFloat();
 
         System.out.printf("O Aluno 1 é %s e sua nota é %.2f \n", sn1, fn1);
+        
+        //Format da String
+        String resultado = String.format("%.2f", fn1);        
+        System.out.println(""+resultado);
     }
 
 }
