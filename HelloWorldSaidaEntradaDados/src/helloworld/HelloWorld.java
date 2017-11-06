@@ -37,6 +37,8 @@ public class HelloWorld {
         Float sals = new Float(1825.54);
         Character ls = new Character('G');
         Boolean cs = new Boolean(false);
+        
+        //No Java, se vc dividir um número inteiro por outro número inteiro ele subentende que vc só vai quer a parte inteira do resultado, por exemplo: 8/3 = 2
 
         System.out.println("Olá mundo");
 
