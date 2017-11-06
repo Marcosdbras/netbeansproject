@@ -30,7 +30,7 @@ public class HelloWorld {
         int id = (int) 3;
         float salario = (float) 1825.54;
         char l = (char) 'G';
-        boolean c = (boolean) false;
+        boolean bc = (boolean) false;
 
         //wrapper class (invólocro)
         Integer ids = new Integer(3);
@@ -127,6 +127,64 @@ public class HelloWorld {
         
         System.out.println("valor aleatório entre 5 e 10 : "+x7);
 
+        //Operador Ternário
+        
+       
+        int ivalor1,ivalor2,r;
+        ivalor1 = 4;
+        ivalor2 = 8;
+        
+        r = (ivalor1 > ivalor2) ?0:1;
+        System.out.println("valor r é"+r);
+        
+        r = (ivalor1 > ivalor2) ? n1+n2 : n1 - n2;
+        System.out.println("Agora valor de r é "+r);
+ 
+        //Operadores relacionais
+        // >, <, >=, <=, ==,  !=
+        
+        //Comparação String - foi criado objetos ao invés de variável
+        String nome1 = "Marcos";
+        String nome2 = "Marcos";
+        String nome3 = new String("Marcos");
+        
+        String res;
+        
+        //Compara direta do conteúdo do objeto String com outro
+        res = (nome1==nome2)?"Igual":"diferente";
+        System.out.println("Nome 1 é "+ res + " a nome 2");
+        
+        //Compara a referência de um objeto com outro
+        res = (nome1==nome3)?"Igual":"diferente";
+        System.out.println("Nome 1 é "+res+" nome 3");
+        
+        //Compara o conteúdo de um objeto com outro conteúdo
+        res = (nome1.equals(nome3))?"Igual":"diferente";
+        System.out.println("Nome 1 é "+res+" Nome 3");   
+        
+        //Operadores lógicos
+        // && = .E. / || = .OU. / ^ = .XOU. ou exclusivo / ! = .NAO.
+        
+        int a,b,c;
+        boolean bResult;
+        
+        a = 4;
+        b = 7;
+        c = 12;
+        
+        bResult = (a < b && b < c)?true:false;
+        System.out.println(bResult);
+        
+        bResult = (a < b && b == c)?true:false;
+        System.out.println(bResult);
+
+        bResult = (a < b || b < c)?true:false;
+        System.out.println(bResult);
+        
+        bResult = (a < b ^ b < c)?true:false;
+        System.out.println(bResult);
+        
+        
         //Saída de dados
         
         System.out.println("Nota 1 é " + nota1);
@@ -154,21 +212,6 @@ public class HelloWorld {
          System.out.println("Pós decremento "+vlrd);
          
          System.out.println("Pré decremento "+vlrd1);
-        
-        //Entrada de Dados (System.in) = dispositivo que será monitorado
-        Scanner teclado = new Scanner(System.in);
-
-        System.out.print("Digite o nome do primeiro aluno: ");
-        String sn1 = teclado.nextLine();
-
-        System.out.print("Digite a nota do primeiro aluno: ");
-        float fn1 = teclado.nextFloat();
-
-        System.out.printf("O Aluno 1 é %s e sua nota é %.2f \n", sn1, fn1);
-        
-        //Format da String
-        String resultado = String.format("%.2f", fn1);        
-        System.out.println(""+resultado);
     }
 
 }
